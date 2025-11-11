@@ -1,0 +1,11 @@
+@import url(./font.css);
+
+
+:root {
+    --MB: 'MB', sans-serif;
+    --MM: 'MM', sans-serif;
+    --MR: 'MR', sans-serif;
+    --primary: #000;
+    --secondary: #fff;
+    --dark-gray: #282828;
+}
