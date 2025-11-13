@@ -9,3 +9,47 @@
     --secondary: #fff;
     --dark-gray: #282828;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.page__header {
+    background-color: var(--dark-gray);
+    padding-block: 6px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--secondary);
+    font-family: var(--MB);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.user__action {
+    display: flex;
+    gap: 25px;
+}
