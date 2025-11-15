@@ -13,3 +13,7 @@
     src: url(../font/Montserrat-Medium.ttf);
 }
 
+@font-face {
+    font-family: 'Prosto-One';
+    src: url(../font/ProstoOne-Regular.ttf);
+}

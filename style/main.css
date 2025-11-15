@@ -5,6 +5,7 @@
     --MB: 'MB', sans-serif;
     --MM: 'MM', sans-serif;
     --MR: 'MR', sans-serif;
+    --PO: 'Prosto-One', sans-serif;
     --primary: #000;
     --secondary: #fff;
     --dark-gray: #282828;
@@ -52,4 +53,39 @@
 .user__action {
     display: flex;
     gap: 25px;
+}
+
+
+.banner {
+    background-image: url(../image/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.banner__title {
+    color: var(--secondary);
+    font-family: var(--PO);
+    font-size: 100px;
+    line-height: 75px;
+}
+
+.banner__link {
+    padding: 13px 14px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    color: var(--primary);
+    font-family: var(--MM);
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
