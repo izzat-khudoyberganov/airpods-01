@@ -19,6 +19,10 @@
     text-decoration: none;
 }
 
+body {
+    background-color: var(--primary);
+}
+
 .page__header {
     background-color: var(--dark-gray);
     padding-block: 6px;
@@ -88,4 +92,32 @@
     display: flex;
     align-items: center;
     gap: 11px;
+}
+
+.products {
+    margin-top: 30px;
+}
+
+.product__content {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.content__text {
+    margin-top: 33px;
+    color: var(--secondary);
+    font-family: var(--MM);
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.content__img {
+    max-width: 552px;
+    width: 100%;
+    display: block;
+}
+
+.align-center {
+    align-items: center;
 }
