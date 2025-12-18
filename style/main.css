@@ -118,7 +118,12 @@ body {
 .product__content {
     display: flex;
     align-items: start;
+    justify-content: space-between;
     gap: 30px;
+}
+
+.product__content:nth-child(2) {
+    margin-top: 50px;
 }
 
 .content__text {
@@ -127,6 +132,8 @@ body {
     font-family: var(--MM);
     font-size: 22px;
     line-height: 27px;
+    max-width: 528px;
+    width: 100%;
 }
 
 .content__img {
@@ -147,6 +154,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .content__left-text,
@@ -163,7 +171,7 @@ body {
     text-align: right;
 }
 
-.content__img {
+.content__img__center {
     width: 268px;
 }
 
@@ -246,6 +254,59 @@ body {
 }
 
 /* Media Query */
+
+@media(max-width: 920px) {
+    .content__img {
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .category__content {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .product__content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product__content:nth-child(2){
+        flex-direction: column-reverse;
+    }
+
+    .content__text{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .info__content{
+        flex-direction: column;
+    }
+
+    .content__left-text,
+    .content__right-text {
+        text-align: center;
+    }
+
+    .category__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page__footer {
+        padding: 60px 0;
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+
 @media(max-width: 700px) {
     .banner__title {
         font-size: 70px;
@@ -300,6 +361,24 @@ body {
     .banner {
         height: 450px;
     }
+
+    .content__text {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .product__content:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .content__left-text,
+    .content__right-text {
+        font-family: var(--MM);
+    }
+
+    .page__footer {
+        padding: 40px 0;
+    }
 }
 
 @media(max-width: 375px) {
@@ -308,6 +387,10 @@ body {
     }
     .banner {
         height: 400px;
+    }
+    .content__text {
+        font-size: 16px;
+        line-height: 120%;
     }
 }
 
